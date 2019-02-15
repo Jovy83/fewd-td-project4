@@ -21,10 +21,9 @@
 }
 
 %nav-links {
-  @extend %rounded-border;
+  @extend %padded;
   display: block;
   text-align: center;
-  padding: $padding-button;
   color: $color-nav-text;
   background-color: $white;
   transition: background-color 0.3s, color 0.3s;
@@ -35,6 +34,44 @@
   }
 }
 
+%padded {
+  @extend %rounded-border;
+  padding: $padding-button;
+}
+
 %rounded-border {
-  border-radius: $border-radius
+  border-radius: $border-radius;
+}
+
+%textfield {
+  @extend %rounded-border;
+  border: none;
+  border-bottom: $border-input-size solid $color-border;
+  margin-bottom: $spacing-medium;
+  padding: $spacing-extra-small;
+  transition: background-color 0.3s;
+
+  &:focus {
+    background-color: $color-input-focus;
+    outline: none;
+  }
+}
+
+
+
+%btn {
+  @extend %padded;
+  font-size: $size-quintary-text;
+  text-transform: uppercase;
+  margin-bottom: $spacing-small;
+  transition: opacity 0.5s;
+  color: white;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: initial;
+  }
 }

@@ -1,0 +1,17 @@
+// .btn--default
+// .btn--success
+// .btn--error
+// .btn--warning
+// .btn--info
+// .theme__colors
+
+@each $btn-state, $btn-color in $btn-colors {
+  .btn--#{$btn-state} {
+    @extend %btn;
+    background-color: $btn-color;
+  }
+}
+
+.theme__colors {
+
+}

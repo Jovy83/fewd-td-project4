@@ -1,0 +1,11 @@
+.form {
+  @include flexy(column);
+
+  &__label--hidden {
+    display: none;
+  }
+
+  &__input {
+    @extend %textfield;
+  }
+}
