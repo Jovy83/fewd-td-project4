@@ -1,0 +1,103 @@
+// Descriptive Colors
+$white: #fff;
+$black: #000;
+$gray: #808080;
+$riptide: #7FDDC2;
+$darkgray: #ACACAC;
+$light-sky-blue: #7ADBF8;
+$deyork: #7EC989;
+$sea-pink: #D67B7D;
+$burnt-sienna: #ED7F5F;
+$purple-majesty: #8E7DBC;
+$wisteria: #D7B5EA;
+$chinook: #9AD6A5;
+$viking: #5DA9C7;
+$shilo: #E1A2A4;
+$sweet-pink: #F0A38A;
+$charlotte: #99E5D2;
+
+$color-paragraph: $gray;
+
+$color-nav-link-highlight: $riptide;
+$color-nav-text: $gray;
+$color-nav-text-highlight: $white;
+
+$color-primary-header: $riptide;
+$color-secondary-header: $darkgray;
+
+$color-anchor: $light-sky-blue;
+$color-border: $riptide; // will also be used by user/pass underline
+$color-blockquote: $gray;
+$color-userpass-txt: $gray;
+$color-img-border: $white;
+$color-input-focus: lighten($riptide, 25%);
+
+$btn-colors: (
+  default: $light-sky-blue,
+  success: $deyork,
+  error: $sea-pink,
+  warning: $burnt-sienna,
+  info: $purple-majesty,
+);
+
+$grid-colors: (
+  2: $wisteria,
+  3: $wisteria,
+  4: $light-sky-blue,
+  5: $chinook,
+  6: $viking,
+  7: $shilo,
+  8: $sweet-pink,
+  9: $sweet-pink,
+  10: $sweet-pink,
+  11: $sweet-pink,
+  12: $charlotte,
+);
+
+// Font Stacks
+$font-url--google        : 'http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900';
+$font-family--primary    : 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family--secondary  : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Font Weights
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+// Font size
+$size-primary-text: 1rem; // will be used by mostly everything
+$size-secondary-text: 1.1rem; // will be used by secondary header
+$size-tertiary-text: 1.8rem; // will be used by primary header
+$size-quaternary-text: 1.2rem; // will be used by the quote section
+$size-quintary-text: 0.8rem; // for the buttons
+$line-height: 1.5; // line height for the page
+$line-height-primary-header: 1.2;
+$line-height-blockquote: 1.3;
+
+// Layout
+$container-width-mobile: 85%;
+$container-width-desktop: 70%;
+$spacing-extra-small: .5rem;
+$spacing-small: 1rem;
+$spacing-medium: 2rem;
+$spacing-large: 3rem;
+$padding-button: 0.75rem;
+
+// Grid widths
+$max-width-grid-4: 33.33%;
+$max-width-grid-5: 40%;
+$max-width-grid-7: 60%;
+$max-width-grid-10: 100%;
+
+// Borders
+$border-radius: 0.4rem;
+$border-quote-size: 0.7rem;
+$border-input-size: 0.4rem;
+$border-image-size: 0.025rem;
+
+// Maps //
+$screen-sizes: (
+'desktop': 769px,
+);
