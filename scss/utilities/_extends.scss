@@ -1,0 +1,36 @@
+%flex-row {
+ display: flex;
+ flex-direction: row;
+}
+
+%flex-column {
+ display: flex;
+ flex-direction: column;
+}
+
+%grid-col-base {
+  @extend %flex-column;
+  margin-bottom: $spacing-medium;
+  flex-basis: 100%;
+  width: 100%;
+
+  @include media-query('desktop') {
+    // base stlyes applied to all grid columns
+    margin-bottom: 0;
+  }
+}
+
+%nav-links {
+  display: block;
+  text-align: center;
+  padding: $padding-button;
+  color: $color-nav-text;
+  background-color: $white;
+  border-radius: $border-radius;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    color: $color-nav-text-highlight;
+    background-color: $color-nav-link-highlight;
+  }
+}

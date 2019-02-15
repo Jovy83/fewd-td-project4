@@ -6,20 +6,24 @@
 // but additional styling may be needed
 // **********************************************
 
+.container {
+  width: $container-width-mobile;
+  margin: $spacing-small auto;
+}
 
 // grid base class
 .grid {
 
   // .grid__row
   &__row {
-    padding: 1em 10px;
-    display: flex;
-    flex-direction: column;
+    @include flexy(column);
+    padding: $spacing-extra-small;
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
+    @include media-query('desktop') {
       flex-direction: row;
     }
+
   }
 
   // .grid__col
@@ -36,15 +40,10 @@
         // base styles applied to all grid columns
         // NOTE: could be converted to a placeholder, along with margin
         // from the  media query
-        margin-top: 10px;
-        flex-basis: 100%;
+        @extend %grid-col-base;
 
         // NOTE: replace with media query mixin if aiming for exceeds
-        @media (min-width: 768px) {
-
-          // base stlyes applied to all grid columns
-          margin-top: 0;
-
+        @include media-query('desktop') {
           // make column width a percentage of the column number / total columns
           flex-basis: #{$i / 12 * 100 + "%"};
         }
@@ -59,10 +58,9 @@
   & + & {
 
     // NOTE: replace with media query mixin if aiming for exceeds
-    @media (min-width: 768px) {
-
+    @include media-query('desktop') {
       // add grid gutter
-      margin-left: 10px;
+      margin-left: $spacing-extra-small;
     }
   }
 }

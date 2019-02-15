@@ -1,0 +1,7 @@
+.nav {
+  &__item {
+    a {
+      @extend %nav-links;
+    }
+  }
+}
