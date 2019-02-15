@@ -1,3 +1,44 @@
+.container {
+  font-family: $font-family--primary;
+  line-height: $line-height;
+  font-size: $size-primary-text;
+}
+
+
 .link {
   align-self: center;
+  color: $color-anchor;
+  font-weight: 700;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.blockquote {
+  @extend %rounded-border;
+  color: $color-blockquote;
+  font-style: italic;
+  font-size: $size-quaternary-text;
+  padding-left: $spacing-small;
+  border-left: $border-quote-size solid $color-border;
+  line-height: $line-height-blockquote;
+}
+
+.headline {
+  &--primary {
+    font-size: $size-tertiary-text;
+    color: $color-primary-header;
+    line-height: $line-height-primary-header;
+    padding-left: $spacing-small;
+    padding-right: $spacing-large;
+    margin-bottom: $spacing-medium;
+  }
+  &--secondary{
+    font-size: $size-secondary-text;
+    color: $color-secondary-header;
+    font-weight: normal;
+    margin-top: $spacing-small;
+    margin-bottom: $spacing-medium;
+  }
 }
