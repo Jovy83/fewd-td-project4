@@ -4,7 +4,9 @@
   }
 
   &--frame {
-
+    width: 100%;
+    padding: $padding-img-frame;
+    border: $black solid $border-image-size;
   }
 
   &--avatar {

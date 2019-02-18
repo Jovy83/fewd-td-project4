@@ -586,6 +586,11 @@ a {
   }
 }
 
+.img--frame {
+  width: 100%;
+  padding: 0.5rem;
+  border: #000 solid 0.025rem;
+}
 .img--avatar {
   margin-bottom: 1rem;
   align-self: center;
