@@ -48,6 +48,16 @@
           flex-basis: #{$i / 12 * 100 + "%"};
         }
       }
+
+    }
+
+    @each $grid-number, $grid-color in $grid-colors {
+      &--#{$grid-number}.theme__colors {
+        @extend %padded;
+        @extend %theme__colors_base;
+        color: $color-paragraph;
+        background-color: $grid-color;
+      }
     }
   }
 }
