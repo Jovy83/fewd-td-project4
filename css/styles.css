@@ -640,6 +640,12 @@ a {
   padding: 0.5rem;
   border: #000 solid 0.025rem;
 }
+@media (min-width: 768px) {
+  .img--frame {
+    width: initial;
+    align-self: center;
+  }
+}
 .img--avatar {
   margin-bottom: 1rem;
   align-self: center;
