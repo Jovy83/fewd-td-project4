@@ -59,6 +59,13 @@
         background-color: $grid-color;
       }
     }
+
+    &--9 {
+      @include media-query('desktop') {
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
 }
 

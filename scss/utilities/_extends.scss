@@ -20,6 +20,20 @@
   }
 }
 
+%nav-base {
+  @include media-query('desktop') {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  &__item {
+    & a {
+      @extend %nav-links;
+    }
+  }
+}
+
 %nav-links {
   @extend %padded;
   display: block;
