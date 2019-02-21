@@ -599,45 +599,100 @@ a {
   color: #808080;
   background-color: #D7B5EA;
 }
+@media (min-width: 768px) {
+  .grid__col--2.theme__colors {
+    align-items: center;
+  }
+}
 .grid__col--3.theme__colors {
   color: #808080;
   background-color: #D7B5EA;
+}
+@media (min-width: 768px) {
+  .grid__col--3.theme__colors {
+    align-items: center;
+  }
 }
 .grid__col--4.theme__colors {
   color: #808080;
   background-color: #7ADBF8;
 }
+@media (min-width: 768px) {
+  .grid__col--4.theme__colors {
+    align-items: center;
+  }
+}
 .grid__col--5.theme__colors {
   color: #808080;
   background-color: #9AD6A5;
+}
+@media (min-width: 768px) {
+  .grid__col--5.theme__colors {
+    align-items: center;
+  }
 }
 .grid__col--6.theme__colors {
   color: #808080;
   background-color: #5DA9C7;
 }
+@media (min-width: 768px) {
+  .grid__col--6.theme__colors {
+    align-items: center;
+  }
+}
 .grid__col--7.theme__colors {
   color: #808080;
   background-color: #E1A2A4;
+}
+@media (min-width: 768px) {
+  .grid__col--7.theme__colors {
+    align-items: center;
+  }
 }
 .grid__col--8.theme__colors {
   color: #808080;
   background-color: #F0A38A;
 }
+@media (min-width: 768px) {
+  .grid__col--8.theme__colors {
+    align-items: center;
+  }
+}
 .grid__col--9.theme__colors {
   color: #808080;
   background-color: #F0A38A;
+}
+@media (min-width: 768px) {
+  .grid__col--9.theme__colors {
+    align-items: center;
+  }
 }
 .grid__col--10.theme__colors {
   color: #808080;
   background-color: #F0A38A;
 }
+@media (min-width: 768px) {
+  .grid__col--10.theme__colors {
+    align-items: center;
+  }
+}
 .grid__col--11.theme__colors {
   color: #808080;
   background-color: #F0A38A;
 }
+@media (min-width: 768px) {
+  .grid__col--11.theme__colors {
+    align-items: center;
+  }
+}
 .grid__col--12.theme__colors {
   color: #808080;
   background-color: #99E5D2;
+}
+@media (min-width: 768px) {
+  .grid__col--12.theme__colors {
+    align-items: center;
+  }
 }
 @media (min-width: 768px) {
   .grid__col--9 {

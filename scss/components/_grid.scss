@@ -19,7 +19,6 @@
     @include flexy(column);
     padding: $spacing-extra-small;
 
-    // NOTE: replace with media query mixin if aiming for exceeds
     @include media-query('desktop') {
       flex-direction: row;
     }
@@ -38,11 +37,8 @@
       &--#{$i} {
 
         // base styles applied to all grid columns
-        // NOTE: could be converted to a placeholder, along with margin
-        // from the  media query
         @extend %grid-col-base;
 
-        // NOTE: replace with media query mixin if aiming for exceeds
         @include media-query('desktop') {
           // make column width a percentage of the column number / total columns
           flex-basis: #{$i / 12 * 100 + "%"};
@@ -55,6 +51,9 @@
       &--#{$grid-number}.theme__colors {
         @extend %padded;
         @extend %theme__colors_base;
+        @include media-query('desktop') {
+          align-items: center;
+        }
         color: $color-paragraph;
         background-color: $grid-color;
       }
@@ -81,7 +80,6 @@
   // grid__col + grid__col, targets two sibling columns
   & + & {
 
-    // NOTE: replace with media query mixin if aiming for exceeds
     @include media-query('desktop') {
       // add grid gutter
       margin-left: $spacing-extra-small;
