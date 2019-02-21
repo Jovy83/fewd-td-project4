@@ -63,6 +63,15 @@
 
 %btn {
   @extend %padded;
+
+  @include media-query('desktop') {
+    flex-grow: 1;
+
+    & + & {
+      margin-left: $spacing-small;
+    }
+  }
+
   font-size: $size-quintary-text;
   text-transform: uppercase;
   margin-bottom: $spacing-small;

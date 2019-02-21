@@ -66,6 +66,13 @@
         align-items: center;
       }
     }
+
+    &--12 {
+      @include media-query('desktop') {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
   }
 }
 

@@ -58,6 +58,14 @@
   transition: opacity 0.5s;
   color: white;
 }
+@media (min-width: 768px) {
+  .btn--info, .btn--warning, .btn--error, .btn--success, .btn--default {
+    flex-grow: 1;
+  }
+  .btn--info + .btn--info, .btn--warning + .btn--info, .btn--info + .btn--warning, .btn--warning + .btn--warning, .btn--error + .btn--info, .btn--error + .btn--warning, .btn--info + .btn--error, .btn--warning + .btn--error, .btn--error + .btn--error, .btn--success + .btn--info, .btn--success + .btn--warning, .btn--success + .btn--error, .btn--info + .btn--success, .btn--warning + .btn--success, .btn--error + .btn--success, .btn--success + .btn--success, .btn--default + .btn--info, .btn--default + .btn--warning, .btn--default + .btn--error, .btn--default + .btn--success, .btn--info + .btn--default, .btn--warning + .btn--default, .btn--error + .btn--default, .btn--success + .btn--default, .btn--default + .btn--default {
+    margin-left: 1rem;
+  }
+}
 .btn--info:hover, .btn--warning:hover, .btn--error:hover, .btn--success:hover, .btn--default:hover {
   opacity: 0.7;
 }
@@ -635,6 +643,12 @@ a {
   .grid__col--9 {
     justify-content: center;
     align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .grid__col--12 {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
