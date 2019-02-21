@@ -8,6 +8,9 @@
 
 .container {
   @extend %center;
+  @include media-query('desktop') {
+    width: $container-width-desktop;
+  }
   width: $container-width-mobile;
 }
 

@@ -526,6 +526,11 @@ a {
 .container {
   width: 85%;
 }
+@media (min-width: 768px) {
+  .container {
+    width: 70%;
+  }
+}
 
 .grid__row {
   padding: 0.5rem;
