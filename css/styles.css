@@ -533,6 +533,7 @@ a {
 @media (min-width: 768px) {
   .grid__row {
     flex-direction: row;
+    margin-bottom: 2rem;
   }
 }
 @media (min-width: 768px) {

@@ -21,6 +21,7 @@
 
     @include media-query('desktop') {
       flex-direction: row;
+      margin-bottom: $spacing-medium;
     }
 
   }
