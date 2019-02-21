@@ -7,8 +7,8 @@
 // **********************************************
 
 .container {
+  @extend %center;
   width: $container-width-mobile;
-  margin: $spacing-small auto;
 }
 
 // grid base class
@@ -80,4 +80,8 @@
       margin-left: $spacing-extra-small;
     }
   }
+}
+
+.centered {
+  @extend %center;
 }
