@@ -1,9 +1,14 @@
+// Import Google font
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
+
+
 .container {
   font-family: $font-family--primary;
   line-height: $line-height;
   font-size: $size-primary-text;
 }
-
 
 .link {
   align-self: center;
